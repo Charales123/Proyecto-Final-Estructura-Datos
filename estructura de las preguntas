@@ -1,0 +1,8 @@
+typedef struct NodoPregunta {
+    char pregunta[256];
+    char opciones[4][100];
+    int opcion_correcta;
+    int puntos;
+    struct NodoPregunta* sig;
+    struct NodoPregunta* ant;
+} NodoPregunta;
