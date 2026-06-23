@@ -84,8 +84,19 @@ void cargarArch(listaDoble &lista, string nomArch){
     string linea;
     pregunta p;
     bool leyendo=false;
+    while(getline(archivo,linea)){
+        
+    }
 }
 
 void guardarArch(listaDoble &lista, string nomArch){
+    ofstream archivo(nomArch.c_str());
+    if(!archivo.is_open()) cout<<"No se pudo guardar el archivo..."<<endl; return;
 
+    nodo *actual=lista.cabeza;
+    while(actual!=nullptr){
+        
+    }
+    archivo.close();
+    cout<<"Archivo guardado :)"<<endl;
 }
